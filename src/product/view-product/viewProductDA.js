@@ -3,7 +3,7 @@ var appSetting = require('../../config/appSetting');
 
 exports.viewProducts = function (req, res) {
     Product.find({
-        'subCategory': req.params.subcategoryid
+        'mainCategory': req.params.subcategoryid
 
     }, function (err, product) {
         if (err) {
