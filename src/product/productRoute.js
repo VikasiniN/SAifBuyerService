@@ -8,5 +8,8 @@ module.exports = function(app) {
 
     app.route('/singleproduct/:productId')
     .get(viewProductMgr.viewSingleProducts);
+
+    app.route('/allproducts')
+    .get(viewProductMgr.allProducts);
    
 }

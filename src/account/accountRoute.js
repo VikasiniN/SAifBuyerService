@@ -51,4 +51,5 @@ module.exports = function (app) {
     app.route('/order/:id/details/:orderid')
     .get(orderMgr.getSingleOrder);
 
+
 }

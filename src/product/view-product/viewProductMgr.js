@@ -16,3 +16,12 @@ exports.viewSingleProducts = function (req, res) {
     }
 }
 
+exports.allProducts = function (req, res) {
+    try {
+        viewProductDA.allProducts(req, res);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
