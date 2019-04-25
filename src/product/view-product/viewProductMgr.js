@@ -15,6 +15,13 @@ exports.viewSingleProducts = function (req, res) {
         console.log(error);
     }
 }
+exports.viewCategoryProducts = function (req, res) {
+    try {
+        viewProductDA.viewCategoryProducts(req, res);
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 exports.allProducts = function (req, res) {
     try {
